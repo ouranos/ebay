@@ -10,7 +10,6 @@ module Ebay # :nodoc:
     #  boolean_node :block_on_warning, 'BlockOnWarning', 'true', 'false', :optional => true
     #  object_node :affiliate_tracking_details, 'AffiliateTrackingDetails', :class => AffiliateTrackingDetails, :optional => true
     #  array_node :variation_specifics, 'VariationSpecifics', 'NameValueList', :class => NameValueList, :default_value => []
-    #  text_node :end_user_ip, 'EndUserIP', :optional => true
     class PlaceOffer < Abstract
       include XML::Mapping
       include Initializer
@@ -20,7 +19,6 @@ module Ebay # :nodoc:
       boolean_node :block_on_warning, 'BlockOnWarning', 'true', 'false', :optional => true
       object_node :affiliate_tracking_details, 'AffiliateTrackingDetails', :class => AffiliateTrackingDetails, :optional => true
       array_node :variation_specifics, 'VariationSpecifics', 'NameValueList', :class => NameValueList, :default_value => []
-      text_node :end_user_ip, 'EndUserIP', :optional => true
     end
   end
 end
